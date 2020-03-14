@@ -18,8 +18,6 @@ string_data = []
 counter = 0
 
 # Function to remove links from a string of text using regular expression package
-# Taken from stackoverflow as i struggled to find a method of successfully removing the links, all my attempts only took
-# part of the links away for certain cases
 def removeLinks(text): 
     link_struct = re.compile('((https?):((//)|(\\\\))+([\w\d:#@%/;$()~_?\+-=\\\.&](#!)?)*)', re.DOTALL)
     linksInTweet = re.findall(link_struct, text)
