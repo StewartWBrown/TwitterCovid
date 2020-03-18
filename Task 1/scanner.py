@@ -86,5 +86,5 @@ if __name__ == "__main__":
     myStream = Stream(auth, myStreamListener)
 
     #Pick what words to be filtered
-    myStream.filter(track=['Corona', 'coronavirus', 'Borris', 'schools', 'pandemic', 'covid19', 'outbreak'])
+    myStream.filter(track=['Corona', 'coronavirus', 'Boris', 'schools', 'pandemic', 'covid19', 'outbreak'])
     

@@ -44,12 +44,12 @@ def removeEntities(text):
 
 
 try: 
-    for tweet in tweets.find().limit(10000):
+    for tweet in tweets.find():
         counter += 1
+        if counter % 1000 == 0:
+            print("Tweets searched: ", counter)
         # takes the tweet and extracts the relevent text from it, giving only message 
         actual_tweet = removeEntities(removeLinks(tweet['message']))
-        print(actual_tweet)
-        print("Tweet Number: ", counter)
         tweetArray.append(actual_tweet)
 
 except OSError as e:
@@ -60,7 +60,7 @@ vectorizer = TfidfVectorizer(stop_words='english')
 vectorized = vectorizer.fit_transform(tweetArray)
 
 # KMeans 
-model = KMeans(max_iter=10000, n_clusters = 8)
+model = KMeans(max_iter=12000, n_clusters = 8)
 model.fit(vectorized)
 
 # Print top terms for each cluster
