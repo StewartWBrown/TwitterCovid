@@ -5,21 +5,19 @@ import json
 import pymongo
 from pymongo import MongoClient
 
-
 import credentials
 
 # Connect to mongodb and create database
 client = MongoClient('mongodb://localhost:27017')
 db = client.coronaDatabase
 tweets = db.tweets
-
 errorCounter = 0
 
 #override tweepy.streamListener to add logic to on_status 
 class MyStreamListener(StreamListener):
     def on_connect(self): 
        print("Now connected to Twitter Streaming API")
-       
+
 
     # When status recieved, take variables that are cared about and put them into table
     def on_data(self, status):
@@ -66,15 +64,14 @@ class MyStreamListener(StreamListener):
             print(tweet_message)
             
         except Exception as e: 
-            
+            errorCounter += 1
             print(e)
 
 # Print out error if error occurs
     def on_error(self, status):
-        errorCounter = errorCounter +1
         print(status)
 
-
+errorCounter += 1
 
 if __name__ == "__main__":
 
@@ -86,5 +83,5 @@ if __name__ == "__main__":
     myStream = Stream(auth, myStreamListener)
 
     #Pick what words to be filtered
-    myStream.filter(track=['Corona', 'coronavirus', 'Boris', 'schools', 'pandemic', 'covid19', 'outbreak'])
+    myStream.filter(track=['Corona', 'coronavirus', 'schools', 'pandemic', 'covid19', 'outbreak'])
     

@@ -1,0 +1,84 @@
+No geo information 169929
+United States 749
+Brasil 184
+Argentina 74
+United Kingdom 58
+Canada 39
+México 32
+España 31
+Indonesia 26
+Ghana 21
+Colombia 21
+Australia 18
+Brazil 18
+Nigeria 17
+Republic of the Philippines 14
+France 12
+Mexico 12
+Malaysia 11
+Chile 10
+Ireland 10
+Türkiye 8
+Paraguay 8
+Italia 6
+Venezuela 6
+Spain 6
+India 6
+Panamá 5
+Estados Unidos 5
+Ecuador 5
+Belgique 4
+Dominican Republic 4
+Portugal 4
+Japan 4
+Trinidad and Tobago 3
+New Zealand 3
+Uruguay 2
+Belgium 2
+Alemania 2
+South Africa 2
+ 2
+People's Republic of China 2
+Thailand 2
+Espanha 2
+Singapore 2
+United Arab Emirates 2
+Espanya 2
+El Salvador 2
+Jamaica 2
+Bolivia 2
+Hong Kong 1
+Royaume-Uni 1
+Niger 1
+Switzerland 1
+Deutschland 1
+Republic of Mauritius 1
+Turkey 1
+Espagne 1
+Islamic Republic of Iran 1
+Kuwait 1
+Martinique 1
+België 1
+Sweden 1
+Albania 1
+Peru 1
+Taiwan 1
+Egypt 1
+Honduras 1
+Algeria 1
+Panama 1
+Senegal 1
+Vietnam 1
+Republic of Serbia 1
+The Netherlands 1
+Italy 1
+Sverige 1
+Nederland 1
+Lebanon 1
+Reino Unido 1
+Polska 1
+Haiti 1
+Glasgow, Scotland 1
+Denmark 1
+Norway 1
+Costa Rica 1
